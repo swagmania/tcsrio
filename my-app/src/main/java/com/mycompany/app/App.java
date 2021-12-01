@@ -1,13 +1,15 @@
-package com.mycompany.app;
+package com.techprimers.testing;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class FizzBuzz {
+
+    public String play(int number) {
+
+        if (number == 0) throw new IllegalArgumentException("Number must not be 0");
+        if (number % 3 == 0) return "Fizz";
+        if (number % 5 == 0) return "Buzz";
+
+
+        return String.valueOf(number);
     }
 }
+
